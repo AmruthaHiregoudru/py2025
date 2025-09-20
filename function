@@ -1,0 +1,205 @@
+#finding square of a number
+# def square(n):
+#     return n*n
+# result=square(int(input()))
+# print(result)
+
+#square of number using lambda
+# s=lambda n:n*n
+# n=int(input())
+# res=s(n)
+# print(res)
+
+#adding using lambda
+# f=lambda a,b:a+b
+# n=int(input())
+# m=int(input())
+# res=f(n,m)
+# print(res)
+
+#using filter(even)
+# def even(n):
+#     return n%2==0
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(even,nums))
+# print(evens)
+#using lambda(without using function)
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# print(evens)
+
+#doubling even numbers
+#def update(n):
+#     return n*2
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# doubles=list(map(update,evens))
+# print(doubles)
+#using lambda
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# doubles=list(map(lambda n:n*2,evens))
+# print(doubles)
+
+#from functools import reduce
+# def add_all(a,b):
+#     return a+b
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# doubles(list(map(lambda n:n*2,evens)))
+# num=reduce(add_all,doubles)
+# print(doubles)
+# print(num)
+#without using function
+# from functools import reduce
+# nums=[1,2,3,4,5,6,7,8,9]
+# evens=list(filter(lambda n:n%2==0,nums))
+# doubles=(list(map(lambda n:n*2,evens)))
+# num=reduce(lambda a,b:a+b,doubles)
+# print(doubles)
+# print(num)
+
+#armstrong number
+# def is_armstrong(n):
+#     return n==sum(int(d)**len(str(n))for d in str(n))
+# n=int(input())
+# print("armstrong",is_armstrong(n))
+
+#magic number
+# def is_magic(n):
+#     while n>9:
+#         n=sum(int(d) for d in str(n))
+#     return n==1
+# n=int(input())
+# print(is_magic(n))
+
+#prime number
+# def is_prime(n):
+#     if n<=1:
+#         return False
+#     for i in range(2,int(n**0.5)+1):
+#         if n%i==0:
+#             return Flase
+#     return True
+# n=int(input())
+# print(is_prime(n))
+
+#reverse number
+# def reverse_num(n):
+#     return int(str(n)[::-1])
+# n=int(input())
+# print(reverse_num(n))
+
+#googly number
+# def is_googly(n):
+#     s=str(n)
+#     odd,even=1,1
+#     for i,d in enumerate(s):
+#         if(i+1)%2==0:
+#             even*=int(d)
+#         else:
+#             odd*=int(d)
+#     return odd==even
+# n=int(input())
+# print(is_googly(n))
+
+#####recursion(1 to n)
+# def nums(n):
+#     if n==0:
+#         return
+#     nums(n-1)  #//recursive call
+#     print(n,end=" ")
+    
+# n=int(input())
+# nums(n)
+
+###5432112345
+# # def nums(n,k):
+#     if n==0:
+#         return
+#     print(n,end=" ")
+#     nums(n-1,k)
+#     if n!=k:
+#         print(n,end=" ")   
+# n=5
+# nums(n,n+1)
+
+#factorial of number
+
+
+# given input is perfect square or not
+# given input is power of 2 or not
+# def factorial(n):
+#     if n==0 or n==1:
+#         return 1
+#     return n*factorial(n-1)
+# n=int(input())
+# print("factorial:",factorial(n))
+
+# reverse integer using recursion
+# def reverse(n,rev=0):
+#     if n==0:
+#         return rev
+#     return reverse(n//10,rev*10+n%10)
+# n=int(input())
+# print("reverse number:",reverse(n))
+
+#given integer is palindrome or not
+# def is_palindrome(s):
+#     if len(s) <= 1:
+#         return True    
+#     if s[0] != s[-1]:
+#         return False
+#     return is_palindrome(s[1:-1])
+# n = input("Enter a number: ")
+# if is_palindrome(n):
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+
+#perfect square or not
+# def square(n):
+#     if n<0:
+#         return False
+#     s=int(n**0.5)
+#     return s*s==n
+# n=int(input())
+# if square(n):
+#     print("yes")
+# else:
+#     print("no")
+
+#input is power of two or not
+# def is_power(n):
+#     if n==1:
+#         return True
+#     if n==0 or n%2!=0:
+#         return False
+#     return is_power(n//2)
+# n=int(input())
+# if is_power(n):
+#     print("yes")
+# else:
+#     print("no")
+
+#find power of two number if a,b find a power b
+
+# def power(a, b):
+#     if b == 0:
+#         return 1
+#     return a * power(a, b - 1)
+# a = int(input("Enter base (a): "))
+# b = int(input("Enter exponent (b): "))
+# print(f"{a}^{b} = {power(a, b)}")
+
+#reduce number to 1 -geeksforgeeks
+def fun(n):
+    if n==1:
+        return 0
+    elif n%2==0:
+        return 1+fun(n//2)
+    else:
+        return 1+min(fun(n-1),fun(n+1))
+n=int(input())
+print(fun(n))
+
