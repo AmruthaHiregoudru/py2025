@@ -201,5 +201,5 @@ def fun(n):
     else:
         return 1+min(fun(n-1),fun(n+1))
 n=int(input())
-print(fun(n))
+# print(fun(n))
 
