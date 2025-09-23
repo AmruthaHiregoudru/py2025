@@ -1,0 +1,105 @@
+##linear search   (unsorted array)
+# def search(arr,key):
+#     for i in range(len(arr)):
+#         if arr[i]==key:
+#             print("element found",i)
+#             break
+#     else:
+#         print("element not found")
+# arr=[1,2,3,4,5]
+# key=2
+# search(arr,key)
+
+##binary search   (sorted array)
+# def bi_search(arr,key):
+#     low=0
+#     high=len(arr)-1
+#     while low<=high:
+#         mid=(low+high)//2    
+#         if arr[mid]==key:
+#             print(f"element{key} found at index{mid}")
+#             return
+#         elif key>arr[mid]:
+#             low=mid+1
+#         else:
+#             high=mid-1
+#     print("Element not found")
+# arr=[1,2,3,4,5]
+# key=4
+# bi_search(arr,key)
+
+##first occurence of key value
+# def first_occ(arr,key):
+#     low=0
+#     high=len(arr)-1
+#     res=-1
+#     while low<=high:
+#         mid=(low+high)//2    
+#         if arr[mid]==key:
+#             res=mid
+#             high=mid-1
+#         elif key>arr[mid]:
+#             low=mid+1
+#         else:
+#             high=mid-1
+#     if res!=-1:
+#         print(f"first occ {key} is at {res}")
+#     else:
+#         print("ele not found")
+# arr=[1,2,2,3,3,5,6,7,8]
+# key=3
+# first_occ(arr,key)
+
+##last occurence of key value
+# def last_occ(arr,key):
+#     low=0
+#     high=len(arr)-1
+#     res=-1
+#     while low<=high:
+#         mid=(low+high)//2    
+#         if arr[mid]==key:
+#             res=mid
+#             low=mid+1
+#         elif key>arr[mid]:
+#             low=mid+1
+#         else:
+#             high=mid-1
+#     if res!=-1:
+#         print(f"last occ {key} is at {res}")
+#     else:
+#         print("ele not found")
+# arr=[1,2,2,3,3,5,6,7,8]
+# key=3
+# last_occ(arr,key)
+
+##find the minimum element from a rotated sorted array using binary search
+# def find_min(arr):
+#     low=0
+#     high=len(arr)-1
+#     while low<high:
+#         mid=(low+high)//2
+#         if arr[mid]>arr[high]:
+#             low=mid+1
+#         else:
+#             high=mid
+#     return arr[low]
+# arr=[5,6,7,1,1,2,3]
+# print("min ele",find_min(arr)) 
+
+##peak element 
+# 
+
+
+##find square root of a number using binary search
+n=16
+low,high=0,n
+result=0
+while low<=high:
+    mid=(low+high)//2
+    if mid*mid<=n:
+        result=mid
+        low=mid+1
+    else:
+        high=mid-1
+print(result)
+
