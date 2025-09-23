@@ -1,0 +1,40 @@
+#even length palindrome
+# s="abba"
+# m=0
+# for c in range(len(s)):
+#     l,r=c,c
+#     while l>=0 and r<len(s) and s[l]==s[r]:
+#         m=max(m,r-l+1)
+#         l-=1
+#         r+=1
+#     l,r=c,c+1
+#     while l>=0 and r<len(s) and s[l]==s[r]:
+#         m=max(m,r-l+1)
+#         l-=1
+#         r+=1
+# print(m)
+# def qwer():
+#     print("hi")
+#     asd()
+# def asd():
+#     print("hello")
+#     qwer()
+# qwer()
+# print(2)
+
+# def qwer(x):
+#     print(x,"hi")
+#     return 30
+# c=qwer(10)+600
+# print(c)
+
+# import sys
+# sys.setrecursionlimit()
+
+# def qwer(x):
+#     if(x==6):
+#         return
+#     print(x)
+#     qwer(x+1)
+# qwer(1)
+
