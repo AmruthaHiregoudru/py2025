@@ -1,0 +1,17 @@
+# n=int(input("Enter number:"))
+# if(n>0):
+#     print("positive")
+# elif(n<0):
+#     print("negative")
+# else:
+#     print("zero")
+
+
+
+# for i in range(50,101,2):
+#     print(i,end=" ") or print(i)
+
+# another way
+for i in range(50,101):
+    if i%2==0:
+        print(i,end=" ")
