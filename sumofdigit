@@ -1,0 +1,26 @@
+# sum=0(3+2 as 5)
+# n=int(input())
+# while n>0:
+#     d=n%10
+#     sum=sum+d
+#     n=n//10
+# print(sum)
+
+
+# count of digits
+# n=int(input())
+# count=0
+# while n>0:
+#     count+=1
+#     n=n//10
+# print(count)
+
+
+#reversing of digits(3+2 as 32)
+n=1234
+rev=0
+while n!=0:
+    d=n%10
+    rev=rev*10+d
+    n=n//10
+print(rev)
