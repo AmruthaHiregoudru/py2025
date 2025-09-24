@@ -1,0 +1,17 @@
+// // #greatest of 3 numbers
+// a=50;
+// b=45;
+// c=32;
+// if(a>b and a>c):
+//     print("a is greater:",a)
+// elif(b>c):
+//     print("b is greater",b)
+// else:
+//     print("c is greater",c)
+a,b,c=map(int,input("Enter 3 numbers:").split())
+if a>b and a>c:
+    print("a is greater:",a)
+elif b>c:
+    print("b is a greater:",b)
+else:
+    print("c is greater:",c)

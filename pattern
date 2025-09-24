@@ -1,0 +1,18 @@
+#n=int(input())
+# for i in range(n,0,-1):
+#    # for j in range(i):
+#      #   print("*",end=" ")
+#     # print(" ")
+#    # print("*"*i)
+#    for j in range(n-i):
+#       print(" ",end=" ")
+#    for j in range(i):
+#       print("*",end=" ")
+#    print("")
+  
+ #in two line
+n=int(input()) 
+for i in range(n,0,-1):
+   print((n-i)*" ",end=" ")
+   print(i*"*")
+print(" ")

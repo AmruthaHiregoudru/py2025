@@ -1,0 +1,9 @@
+n=int(input("Enter number:"))
+if(n%3==0 and n%5==0):
+    print("fizzbuzz number")
+elif(n%3==0):
+    print("fizz number")
+elif(n%5==0):
+    print("buzz number")
+else:
+    print("unable")
